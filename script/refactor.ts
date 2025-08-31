@@ -12,7 +12,7 @@ export function refactoringFiles(
 	
 	log('running refactor...');
 	
-	const filterFiles = (file: string) => {
+	const filterFiles = (file: string): void => {
 		const pathExt = path.extname(file);
 		const fileName = path.basename(file);
 		
